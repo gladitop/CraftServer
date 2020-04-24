@@ -39,9 +39,16 @@
   <PropertyGroup>
     <StartupObject>CraftServer.App</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Ico.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -74,6 +81,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Other\Class\Data.cs" />
+    <Compile Include="Other\Class\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -91,6 +100,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -98,6 +108,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AddServer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Bukkit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Cauldron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DeleteServer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Directory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Spigot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UpdateIco.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UpdateMin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Vanilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\WrenchToolMin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
